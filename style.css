@@ -60,5 +60,86 @@ body {
 }
 
 .form-container {
-  background: url('assets/images/background.png');
+  padding: 70px 0 92px 97px;
+  background: url('assets/images/background.png') no-repeat;
+  background-size: cover;
+}
+
+.form-block {
+  width: 358px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 275px;
+  background-color: #9da3d7;  
+}
+
+.form-title {
+  margin: 0 0 15px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #9da3d7;
+  text-transform: uppercase;
+}
+
+.form label {
+  margin: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form input, button {  
+  height: 49px;
+  border: none;
+}
+
+.form input {
+  width: 275px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.form input::-webkit-input-placeholder {
+  font-family: "Myriad Pro";
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: #767676;  
+}
+.form input::-moz-placeholder {
+  font-family: "Myriad Pro";
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: #767676;
+}
+.form input:-moz-placeholder {
+  font-family: "Myriad Pro";
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: #767676;
+}
+.form input:-ms-input-placeholder {
+  font-family: "Myriad Pro";
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: #767676;
+}
+
+.form button {
+  width: 290px;
+  background-color: #ffc087;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
 }
