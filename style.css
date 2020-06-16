@@ -1,0 +1,64 @@
+/* fonts */
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('assets/fonts/MyriadPro-Regular.eot');
+	src: url('assets/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/MyriadPro-Regular.woff') format('woff'),
+		url('assets/fonts/MyriadPro-Regular.ttf')  format('truetype'),
+		url('assets/fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('assets/fonts/MyriadPro-Bold.eot');
+	src: url('assets/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/MyriadPro-Bold.woff') format('woff'),
+		url('assets/fonts/MyriadPro-Bold.ttf')  format('truetype'),
+		url('assets/fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html {
+  font-family: 'MyriadPro', serif;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;  
+}
+
+.header {  
+  background-color: #dcdcdc;
+}
+
+.header__wrapper {
+  padding: 65px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts li {  
+  list-style: none;
+}
+
+.contacts a {
+  font-size: 4rem;  
+  line-height: 46px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #767676;
+}
+
+.form-container {
+  background: url('assets/images/background.png');
+}
