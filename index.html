@@ -23,9 +23,13 @@
           <p class="form-title">форма с кнопкой</p>
           <form action="" class="form">
             <label for="tel">оставь телефон и получи что-то офигенное</label>
-            <input type="tel" name="tel" placeholder="Введите номер">
-            <button type="submit">получить</button>
+            <input type="number" name="tel" placeholder="Введите номер" required>
+            <button class="submit" type="submit">получить</button>            
           </form>
+          <div class="popup">
+            <p class="popup__text">Сообщение отправлено</p>
+            <button class="popup__button">Ок</button>
+          </div>
         </div>
       </div>
     </div>
@@ -54,6 +58,95 @@
         </div>
       </div>
     </div>
+    <div class="description-container">
+      <div class="wrapper">
+        <h3 class="description__title">просто текстовый блок</h3>
+        <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac dui lacus. Nulla dapibus interdum interdum. Curabitur ut diam nisl. Vivamus libero lacus, viverra at dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna ut, placerat nulla. Duis nunc urna, semper non arcu ut, sagittis dapibus lorem. Nunc nec urna id velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in risus ante.</p>
+      </div>      
+    </div>
+    <div class="calculator-block">
+      <div class="wrapper">
+        <h3 class="calculator__title"><p>Калькулятор</p><p>(стоимость пользователь узнает по телефону)</p></h3>
+        <div class="windows-block">
+          <div class="window">
+            <img class="window__image" src="assets/images/window1.png" alt="window" width="55" height="90">
+            <p class="window__text">Одностворчатое</p>
+          </div>
+          <div class="window">
+            <img class="window__image" src="assets/images/window2.png" alt="window" width="105" height="90">
+            <p class="window__text">Двухстворчатое</p>
+          </div>
+          <div class="window">
+            <img class="window__image" src="assets/images/window3.png" alt="window" width="160" height="90">
+            <p class="window__text">Трехстворчатое</p>
+          </div>
+          <div class="window">
+            <img class="window__image" src="assets/images/window4.png" alt="window" width="173" height="140">
+            <p class="window__text">Балконный блок</p>
+          </div>
+          <div class="window">
+            <img class="window__image" src="assets/images/window5.png" alt="window" width="166" height="140">
+            <p class="window__text">Остекление балкона</p>
+          </div>
+        </div>
+        <form class="calculator-form">
+          <div class="choice-block">
+            <div class="sizes">
+              <p class="sizes__width">ширина</p>
+              <div class="sizes__window">
+                <p class="sizes__height">высота</p>
+                <img src="assets/images/window1.png" alt="window" width="103" height="168">
+              </div>
+              <div class="sizes__form">
+                <div class="input-block">
+                  <label class="sizes__label" for="width">ширина, см</label>
+                  <input class="sizes__input" type="number" name="width" value="120">
+                </div>
+                <span class="sizes__mult">x</span>
+                <div class="input-block">
+                  <label class="sizes__label" for="height">высота, см</label>
+                  <input class="sizes__input" type="number" name="height" value="120">
+                </div>
+              </div>
+            </div>
+            <div class="types">
+              <h4 class="types__title">Одностворчатое окно KBE</h4>
+              <div class="type">
+                <p class="type__title">1. Критерий выбора</p>
+                <ul class="radio">
+                  <li><input type="radio" id="choice1">
+                    <label for="choice1">пункт выбора 1</label></li>
+                  <li><input type="radio" id="choice2">
+                    <label for="choice2">пункт выбора 2</label></li>
+                  <li><input type="radio" id="choice3">
+                    <label for="choice3">пункт выбора 3</label></li>
+                </ul>              
+              </div>
+              <div class="type">
+                <p class="type__title">2. Выберите открывание створки</p>
+                <select name="droplist" id="droplist">
+                  <option value="">Не открывается</option>
+                  <option value="">Открывается</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="send-block">
+            <div class="calculator__tel">
+              <div class="tel-icon"></div>
+              <input type="tel" placeholder="Введите номер">
+            </div>            
+            <button class="calculator__button" type="submit">рассчитать</button>
+          </div>        
+        </form>
+      </div>     
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="footer__text">просто</p>
+        <p class="footer__text">скромный футер</p>
+      </div>
+    </footer>   
   </main>
   <script src="script.js"></script>
 </body>
